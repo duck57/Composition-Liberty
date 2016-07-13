@@ -34,5 +34,40 @@
     \midi {  }
     \layout {  }
   }
-  %\pageBreak
+}
+
+% Parts
+
+
+\book {
+  \header {
+    instrument = "Vibraphone"
+  }
+  \score {
+    \new Staff { #(set-accidental-style 'modern-cautionary) << \global \vibraphonePart >> }
+  }
+}
+\book {
+  \header {
+    instrument = "Marimba"
+  }
+  \score {
+    \new Staff { #(set-accidental-style 'modern-cautionary) << \global \marimbaPart >> }
+  }
+}
+\book {
+  \header {
+    instrument = "Bass"
+  }
+  \score {
+    \new Staff { #(set-accidental-style 'modern-cautionary) << \global \bassLine >> }
+  }
+}
+\book {
+  \header {
+    instrument = "Drums"
+  }
+  \score {
+    \drumSet
+  }
 }

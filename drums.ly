@@ -11,8 +11,14 @@ up = \drummode {
   #(remove-grace-property 'Voice 'Stem 'direction)
 
   \oneVoice
-  R1*5/4*2 -"10 quarter notes" |
-  \voiceOne
+  R1*5/4 r2. \voiceOne
+  <<
+    r2
+    \new CueVoice {
+      \notemode { \cueClef "treble" \stemUp \times 2/3 { cis'8_"mba" dis' e' } f'8 fis' }
+    }
+  >>
+  \cueClefUnset |
 
   cymr4\mp <cymr sn>8 <cymr sn>8  cymr4 cymr <cymr sn>8  cymr8 <cymr sn>8 bd |
   \stemUp bd4 \stemDown \acciaccatura sn8 sn4 \acciaccatura sn8 sn4 |
