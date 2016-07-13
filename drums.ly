@@ -79,11 +79,15 @@ down = \drummode {
   bd8. bd16 r8 bd8 r16 bd8 bd16 r8 bd8 |
 }
 
-
 drumSet = \new DrumStaff <<
   \set Staff.instrumentName = #"drum set "
   \set Staff.shortInstrumentName = #"D.S. "
 
   \new DrumVoice { \voiceOne \up }
-  \new DrumVoice { \voiceTwo << \global \down >> }  
+  \new DrumVoice { \voiceTwo << \global \down >> } 
+>>
+
+partDS = \new DrumStaff <<
+  \new DrumVoice { \voiceOne \up }
+  \new DrumVoice { \voiceTwo << \global \down >> } 
 >>

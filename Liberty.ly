@@ -26,9 +26,9 @@
   %\pageBreak
   \score {
     <<
-      \new Staff << \global \vibraphonePart >>
-      \new Staff << \global \marimbaPart >>
-      \new Staff << \global \bassLine >>
+      \new Staff << \global \vibraphonePart \vSetup >>
+      \new Staff << \global \marimbaPart \mSetup >>
+      \new Staff << \global \bassLine \bassName >>
       \drumSet
     >>
     \midi {  }
@@ -68,6 +68,6 @@
     instrument = "Drums"
   }
   \score {
-    \drumSet
+    \partDS
   }
 }
