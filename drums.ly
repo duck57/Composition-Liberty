@@ -10,7 +10,9 @@ up = \drummode {
   #(add-grace-property 'Voice 'Stem 'direction ly:stem::calc-direction)
   #(remove-grace-property 'Voice 'Stem 'direction)
 
+  \oneVoice
   R1*5/4*2 -"10 quarter notes" |
+  \voiceOne
 
   cymr4\mp <cymr sn>8 <cymr sn>8  cymr4 cymr <cymr sn>8  cymr8 <cymr sn>8 bd |
   \stemUp bd4 \stemDown \acciaccatura sn8 sn4 \acciaccatura sn8 sn4 |
@@ -23,10 +25,10 @@ up = \drummode {
 
 
   cymr8\mf cymr16 cymr16 sn16 cymr8 hhc16 hh hh hh8 sn8 cyms8 |
-  cymr4 <cymr sn>8 <cymr sn>8 cymr4 cymr4 \times 2/3 { <cymr sn>8 cymr cymr } <cymr sn>8 bd |
+  cymr4 <cymr sn>8 <cymr sn>8 cymr4 cymr4 \times 2/3 { <cymr sn>8 cymr cymr } <cymr sn>8[ bd] |
 
-  \times 2/3 { hhc8 hh hh } \times 2/3 { sn hh hh } \times 2/3 { hh hh hh } \times 2/3 { sn hh hh } hhho8 cymr16 cymr sn8 bd |
-  \times 2/3 { hhc8 hh hh } \times 2/3 { sn hh hh } hh8[ hh <hh sn> hh] hh[ hh] |
+  \times 2/3 { hhc8 hh hh } \times 2/3 { sn[ hh hh] } \times 2/3 { hh hh hh } \times 2/3 { sn hh hh } hhho8 cymr16 cymr sn8 bd |
+  \times 2/3 { hhc8 hh hh } \times 2/3 { sn[ hh hh] } hh8[ hh <hh sn> hh] hh[ hh] |
 
   \repeat unfold 4 { r8[ hhho sn hho] }
   sn->[ sn->] |
@@ -44,7 +46,7 @@ down = \drummode {
   #(add-grace-property 'Voice 'Stem 'direction ly:stem::calc-direction)
   #(remove-grace-property 'Voice 'Stem 'direction)
 
-  R1*5/4*2 |
+  s1*5/4*2 |
 
   bd4. bd8 bd4 bd4 bd4. s8 |
   s2. |

@@ -27,7 +27,7 @@ marimbaPart = \relative c {
 	\clef bass <c, e g c>8. <bes d f bes>16 r8 <a d> <c e g c>8. <bes d f bes>16 r8 <a d> <c e g c>8. <bes d f bes>16 r8 <a d> |
 
 
-	\times 2/3 { a8\p\<\( ais b } \dimHairpin \times 2/3 { c cis d } \times 2/3 { dis e f } \times 2/3 { fis g gis } a2->\ff\) |
+	\times 2/3 { a8\p\<\( ais b } \dimHairpin \times 2/3 { c[ cis d] } \times 2/3 { dis e f } \times 2/3 { fis g gis } a2->\ff\) |
 	\times 2/3 { a,8\mp\<\( b cis } \times 2/3 { dis f g } a2\f\) f8 c'8 |
 
 	f,16\> e f e \times 2/3 { c8~(\mp\< <c e>~ <c e g>~ } <c e g c>8.\f\> <bes d f bes>16-.) r8 <a d e a> |

@@ -18,10 +18,9 @@
     line-width = 216\mm - 37\mm
   }
   \header {
-    title = "Early Compositions"
-    subtitle = ""
-    composer = "Chris Matlak"
-    copyright = \markup { \char ##x00A9 "2006" }
+    title = "Composition of Liberty"
+    composer = "Chris J.M."
+    copyright = \markup { \char ##x00A9 "2006, minor revisions 2016" }
     breakbefore = ##t
   }
   %\pageBreak
@@ -34,9 +33,6 @@
     >>
     \midi {  }
     \layout {  }
-    \header {
-      piece = "\"Composition of Liberty\""
-    }
   }
   %\pageBreak
 }

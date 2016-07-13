@@ -20,14 +20,14 @@ vibraphonePart = \relative c' {
 
 	e a16\( ais b8 c4\) gis16\( ais b8 c16\) ais b8 |
 	<f, a c g'>2.\mf <a c f a>2 |
-	<f a b d>1--->\laissezVibrer\fermata -\markup { "play notes in parentheses first time only" } \parenthesize g'8\f\( \parenthesize e8  |
+	<f a b d>1--->\laissezVibrer\fermata \parenthesize g'8\f\( \parenthesize e8 -\markup { "( ) = 1st time only" }  |
 
 
 	c16 aes f d c\) aes d( f aes2 |
 	c4) g2 b4 d4 e16\( d c b |
 
-	a1\sustainOn\)\glissando -\markup { \italic "lower manual glissando" } a'2\glissando |
-	a,,2*7/8 s16\sustainOff g16\(\p\< a b c d4\)\mp c'4 |
+	a1\sustainOn\glissando -\markup { \italic "white key glissando" } a'2\glissando |
+	a,,2*7/8\) s16\sustainOff g16\(\p\< a b c d4\)\mp c'4 |
 
 	d16\< e f g \times 2/3 { a8 b c } d\mf\> b16 g e c a f |
 	e4\mp c' e16\(\> d c a\) \times 4/6 { f16\p\< g a g f e } f4\f |
@@ -37,5 +37,5 @@ vibraphonePart = \relative c' {
 	a16\(\mp b c d e f g a b c d e f4\) |
 	\set beatGrouping = #'(3 3 3 3 3) \crescTextCresc f,,4(\subp\< a8) g4( b8) a4( c8) b a g f g a |
 	\set beatGrouping = #'(3 3) f16\( g a b c d e\)\fp\< c\( d e f g |
-	a b c d\) c\( d e f\f \crescHairpin r[ c,(\sp\< e g] c4)\ff |
+	a b c d\) c\( d e f\f\) \crescHairpin r[ c,(\sp\< e g] c4)\ff |
 }
