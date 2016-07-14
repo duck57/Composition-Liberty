@@ -20,7 +20,7 @@
   \header {
     title = "Composition of Liberty"
     composer = "Chris J.M."
-    copyright = \markup { \char ##x00A9 "2006, minor revisions 2016" }
+    copyright = \markup { \char ##x00A9 "2006" }
     breakbefore = ##t
   }
   %\pageBreak
